@@ -30,10 +30,10 @@ while i < n:
     i += 1
 
 a, b = linearFitting(x, y, n)
+print("拟合曲线为：p = %.4f + %.4fx" % (a, b))
 x_ = np.arange(min, max, 0.1)
 y_ = a + b * x_
-plt.title("p=" + str(a) + "+" + str(b) + "x", fontsize=24)
+#plt.title("p=" + str(a) + "+" + str(b) + "x", fontsize=24)
 plt.plot(x_, y_)
 plt.scatter(x, y)
 plt.show()
-print("拟合曲线为：p = %.4f + %.4fx" % (a, b))

@@ -1,10 +1,7 @@
 import math
-import sys
 
 f = lambda x: x * x * x - x - 1
 
-# txt = open('./hhh', 'r')
-# sys.stdin = txt
 print("本例求解x * x * x - x - 1 = 0的近似解")
 a, b = map(float, input("输入区间：\n").split())
 p = float(input("输入要求精度：\n"))
